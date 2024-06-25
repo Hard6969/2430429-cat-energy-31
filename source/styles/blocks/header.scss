@@ -1,5 +1,57 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
   padding: 10px 15px;
+}
+
+.header-content {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.header-content picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.header-navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.header-navigation-menu__item a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-navigation-menu__item a:active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #68B738;
+}
+
+.header-navigation-menu__item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #68B738;
+}
+
+.current {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #68B738;
+}
+
+.header-content:last-child {
+  align-self: flex-end;
 }

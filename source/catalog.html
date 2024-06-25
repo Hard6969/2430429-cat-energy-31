@@ -11,14 +11,26 @@
 <header class="header">
   <section class="header-content">
     <a class="header-content__logo" href="index.html">
-      <img alt="logo-cat-energy" class="header-content__logo-image">
-      <span class="header-content__logo-text">Cat Energy</span>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/icons/logo-desktop.png">
+        <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.png">
+        <source media="(min-width: 320px)" srcset="images/icons/logo-mobile.png">
+        <img alt="fat-cat" src="images/icons/logo-mobile.png">
+      </picture>
+    </a>
+    <a class="header-content__logo-text" href="index.html">
+      <picture>
+        <source media="min-width: 1200px" srcset="images/icons/logo-2.png">
+        <source media="min-width: 768px" srcset="images/icons/logo-2.png">
+        <source media="min-width: 320px" srcset="images/icons/logo-2.png">
+        <img class="header-content__logo-text-image" alt="logo-text" src="images/icons/logo-2.png">
+      </picture>
     </a>
     <nav>
       <ul class="header-navigation-menu">
         <li class="header-navigation-menu__item"><a href="index.html">Главная</a></li>
         <li class="header-navigation-menu__item current"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="header-navigation-menu__item"><a href="#prog">Подбор программы</a></li>
+        <li class="header-navigation-menu__item"><a href="#">Подбор программы</a></li>
       </ul>
     </nav>
   </section>
