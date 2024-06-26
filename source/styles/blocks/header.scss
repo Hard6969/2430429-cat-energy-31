@@ -1,5 +1,8 @@
 .header {
-  display: block;
+  @media min-width: 320px {
+  display: flex;
+  width: 100%;
+  }
   background-color: #ffffff;
   color: #000000;
   padding: 10px 15px;
