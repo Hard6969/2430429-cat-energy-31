@@ -1,0 +1,35 @@
+.page-hero {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: $mobile-width-only) {
+    background-image: none;
+    flex-direction: row;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    flex-direction: row;
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-hero, .main-content, .how-to, live-about {
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
+
+.page-hero {
+  align-self: flex-start;
+}
