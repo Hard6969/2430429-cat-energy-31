@@ -1,6 +1,7 @@
 .page-hero {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   @media (max-width: $mobile-width-only) {
     background-image: none;
     flex-direction: row;
@@ -30,6 +31,3 @@
   }
 }
 
-.page-hero {
-  align-self: flex-start;
-}
